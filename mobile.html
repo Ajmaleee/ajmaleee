@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
+<meta name="theme-color" content="#faf5ec"/>
+<title>Ajmal Ali — Frontend Developer</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,700;1,700&family=Outfit:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="css/mobile.css"/>
+</head>
+<body>
+
+<!-- ══════════ TOP NAV ══════════ -->
+<nav class="m-nav" id="m-nav">
+  <div class="m-nav-logo" onclick="mGoPage('home')">Ajmal<span>.</span></div>
+  <div class="m-menu-btn" id="m-menu-btn" onclick="mToggleDrawer()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- ══════════ DRAWER ══════════ -->
+<div class="m-drawer" id="m-drawer">
+  <div class="m-drawer-links">
+    <div class="m-drawer-link active" data-mpage="home" onclick="mGoPage('home')">
+      Home
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+    </div>
+    <div class="m-drawer-link" data-mpage="about" onclick="mGoPage('about')">
+      About
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M6 20v-1a6 6 0 0 1 12 0v1"/></svg>
+    </div>
+    <div class="m-drawer-link" data-mpage="skills" onclick="mGoPage('skills')">
+      Skills
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3 6h6l-5 4 2 6-6-4-6 4 2-6L3 8h6z"/></svg>
+    </div>
+    <div class="m-drawer-link" data-mpage="projects" onclick="mGoPage('projects')">
+      Projects
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="8" height="8"/><rect x="13" y="3" width="8" height="8"/><rect x="13" y="13" width="8" height="8"/><rect x="3" y="13" width="8" height="8"/></svg>
+    </div>
+    <div class="m-drawer-link" data-mpage="contact" onclick="mGoPage('contact')">
+      Contact
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════
+     HOME PAGE
+══════════════════════════════ -->
+<div class="m-page active" id="m-page-home">
+
+  <!-- Hero -->
+  <div class="m-home-hero">
+    <div class="m-eyebrow">
+      Frontend Developer
+      <span class="m-avail-badge"><span class="m-avail-dot"></span>Available</span>
+    </div>
+    <h1 class="m-headline">
+      Ajmal Ali<br>
+      <span class="stroke italic">builds</span><br>
+      the web.
+    </h1>
+    <p class="m-hero-sub">
+      <strong>Modern, responsive, and alive</strong> — I craft frontend experiences with clean code, thoughtful design, and pixels with purpose.
+    </p>
+    <div class="m-hero-btns">
+      <button class="m-btn m-btn-gold" onclick="mGoPage('projects')">View Projects</button>
+      <button class="m-btn m-btn-outline" onclick="mGoPage('contact')">Let's Talk</button>
+    </div>
+  </div>
+
+  <!-- Ticker -->
+  <div class="m-ticker">
+    <div class="m-ticker-track">
+      <span class="m-ticker-item">HTML5 & CSS3</span>
+      <span class="m-ticker-item">JavaScript</span>
+      <span class="m-ticker-item">Responsive</span>
+      <span class="m-ticker-item">UI/UX</span>
+      <span class="m-ticker-item">Cloudflare</span>
+      <span class="m-ticker-item">Animation</span>
+      <span class="m-ticker-item">WebGL</span>
+      <span class="m-ticker-item">Kerala 🍂</span>
+      <span class="m-ticker-item">HTML5 & CSS3</span>
+      <span class="m-ticker-item">JavaScript</span>
+      <span class="m-ticker-item">Responsive</span>
+      <span class="m-ticker-item">UI/UX</span>
+      <span class="m-ticker-item">Cloudflare</span>
+      <span class="m-ticker-item">Animation</span>
+      <span class="m-ticker-item">WebGL</span>
+      <span class="m-ticker-item">Kerala 🍂</span>
+    </div>
+  </div>
+
+  <!-- Stats -->
+  <div class="m-stats-row m-reveal">
+    <div class="m-stat">
+      <span class="m-stat-num">5+</span>
+      <span class="m-stat-label">Projects</span>
+    </div>
+    <div class="m-stat">
+      <span class="m-stat-num">100%</span>
+      <span class="m-stat-label">Responsive</span>
+    </div>
+    <div class="m-stat" id="m-egg-stat">
+      <span class="m-stat-num">🍂</span>
+      <span class="m-stat-label">Autumn</span>
+    </div>
+  </div>
+
+  <!-- Nav cards -->
+  <div class="m-nav-cards">
+    <div class="m-card m-reveal" onclick="mGoPage('about')">
+      <div class="m-card-inner">
+        <div class="m-card-tag">About Me</div>
+        <div class="m-card-title">Designer. Developer. Dream builder.</div>
+        <div class="m-card-desc">Frontend dev from Kerala, obsessed with pixels, performance, and the space between design and code.</div>
+      </div>
+      <div class="m-card-footer">
+        <span>Read my story</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M7 7h10v10"/></svg>
+      </div>
+    </div>
+
+    <div class="m-card m-card-dark m-reveal" onclick="mGoPage('projects')">
+      <div class="m-card-inner">
+        <div class="m-card-tag">Projects</div>
+        <div class="m-card-title">5 live sites — all crafted with care.</div>
+        <div class="m-card-desc">macOS sims · AI UIs · GPU tools · Electronics stores</div>
+      </div>
+      <div class="m-card-footer">
+        <span>See all projects</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M7 7h10v10"/></svg>
+      </div>
+    </div>
+
+    <div class="m-card-row m-reveal">
+      <div class="m-card" onclick="mGoPage('skills')">
+        <div class="m-card-inner">
+          <div class="m-card-tag">Skills</div>
+          <div class="m-card-title">My Toolkit</div>
+        </div>
+        <div class="m-card-footer">
+          <span>Explore</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M7 7h10v10"/></svg>
+        </div>
+      </div>
+      <div class="m-card m-card-gold" onclick="mGoPage('contact')">
+        <div class="m-card-inner">
+          <div class="m-card-tag">Contact</div>
+          <div class="m-card-title">Let's build it.</div>
+        </div>
+        <div class="m-card-footer">
+          <span>Say hello</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M7 7h10v10"/></svg>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /home -->
+
+<!-- ══════════════════════════════
+     ABOUT PAGE
+══════════════════════════════ -->
+<div class="m-page" id="m-page-about">
+
+  <div class="m-section">
+    <span class="m-section-tag">About Me</span>
+    <h2 class="m-section-title m-reveal">The person behind the pixels</h2>
+    <div class="m-divider"></div>
+  </div>
+
+  <div class="m-about-content">
+
+    <div class="m-profile-card m-reveal">
+      <div class="m-avatar">AA</div>
+      <div class="m-profile-info">
+        <h3>Ajmal Ali</h3>
+        <p>Frontend Developer</p>
+        <div class="m-profile-tags">
+          <span class="m-tag">Kerala 🇮🇳</span>
+          <span class="m-tag">Freelance</span>
+          <span class="m-tag">Available</span>
+        </div>
+      </div>
+    </div>
+
+    <p class="m-bio-text m-reveal">
+      I'm <strong>Ajmal Ali</strong>, a frontend developer and UI/UX enthusiast from Kerala, India. I build beautiful, fast, responsive websites — the kind that make people stop and say <em>"wow, who made this?"</em>
+    </p>
+    <p class="m-bio-text m-reveal">
+      My work lives at the intersection of <strong>clean code and great design</strong>. Every pixel has a reason.
+    </p>
+
+    <div class="m-info-list m-reveal">
+      <div class="m-info-item">
+        <div class="m-info-ico">📍</div>
+        <div><div class="m-info-l">Location</div><div class="m-info-v">Kerala, India</div></div>
+      </div>
+      <div class="m-info-item">
+        <div class="m-info-ico">📞</div>
+        <div><div class="m-info-l">Phone</div><div class="m-info-v">+91 9495050785</div></div>
+      </div>
+      <div class="m-info-item">
+        <div class="m-info-ico">✉️</div>
+        <div><div class="m-info-l">Email</div><div class="m-info-v">ajmalsworkshop@gmail.com</div></div>
+      </div>
+      <div class="m-info-item">
+        <div class="m-info-ico">⏰</div>
+        <div><div class="m-info-l">Availability</div><div class="m-info-v">Mon–Sat, 9AM–8PM IST</div></div>
+      </div>
+    </div>
+
+    <div class="m-about-stats m-reveal">
+      <div class="m-stat"><span class="m-stat-num">5+</span><span class="m-stat-label">Projects</span></div>
+      <div class="m-stat"><span class="m-stat-num">100%</span><span class="m-stat-label">Mobile</span></div>
+      <div class="m-stat"><span class="m-stat-num">∞</span><span class="m-stat-label">Creativity</span></div>
+    </div>
+
+    <div class="m-timeline-label m-reveal">Journey</div>
+    <div class="m-tl-item m-reveal">
+      <div class="m-tl-line"><div class="m-tl-dot"></div><div class="m-tl-bar"></div></div>
+      <div>
+        <div class="m-tl-year">2023 — Present</div>
+        <div class="m-tl-title">Freelance Frontend Developer</div>
+        <div class="m-tl-desc">Building polished, production-ready sites deployed on Cloudflare Pages.</div>
+      </div>
+    </div>
+    <div class="m-tl-item m-reveal">
+      <div class="m-tl-line"><div class="m-tl-dot"></div><div class="m-tl-bar"></div></div>
+      <div>
+        <div class="m-tl-year">2022</div>
+        <div class="m-tl-title">Self-taught Web Development</div>
+        <div class="m-tl-desc">Deep-dived into HTML, CSS, JS — built personal projects to sharpen skills in animation and layout.</div>
+      </div>
+    </div>
+    <div class="m-tl-item m-reveal">
+      <div class="m-tl-line"><div class="m-tl-dot"></div></div>
+      <div>
+        <div class="m-tl-year">2021</div>
+        <div class="m-tl-title">Discovered Web Design</div>
+        <div class="m-tl-desc">Fell in love with the web as a creative medium.</div>
+      </div>
+    </div>
+
+  </div>
+</div><!-- /about -->
+
+<!-- ══════════════════════════════
+     SKILLS PAGE
+══════════════════════════════ -->
+<div class="m-page" id="m-page-skills">
+
+  <div class="m-section">
+    <span class="m-section-tag">Skills</span>
+    <h2 class="m-section-title m-reveal">My toolkit</h2>
+    <div class="m-divider"></div>
+    <p class="m-sub-text m-reveal">Technologies and design principles I use to craft memorable digital experiences.</p>
+  </div>
+
+  <div class="m-skills-content">
+
+    <div class="m-skills-grid">
+      <div class="m-skill-card m-reveal">
+        <div class="m-sc-header"><span class="m-sc-ico">🎨</span><div class="m-sc-title">UI / UX Design</div></div>
+        <div class="m-sc-pills"><span class="m-sp">Figma</span><span class="m-sp">Wireframing</span><span class="m-sp">Prototyping</span><span class="m-sp">Design Systems</span><span class="m-sp">Typography</span></div>
+      </div>
+      <div class="m-skill-card m-reveal">
+        <div class="m-sc-header"><span class="m-sc-ico">💻</span><div class="m-sc-title">Frontend Development</div></div>
+        <div class="m-sc-pills"><span class="m-sp">HTML5</span><span class="m-sp">CSS3</span><span class="m-sp">JavaScript</span><span class="m-sp">Animations</span><span class="m-sp">Web APIs</span></div>
+      </div>
+      <div class="m-skill-card m-reveal">
+        <div class="m-sc-header"><span class="m-sc-ico">📱</span><div class="m-sc-title">Responsive Design</div></div>
+        <div class="m-sc-pills"><span class="m-sp">CSS Grid</span><span class="m-sp">Flexbox</span><span class="m-sp">Mobile-First</span><span class="m-sp">Media Queries</span></div>
+      </div>
+      <div class="m-skill-card m-reveal">
+        <div class="m-sc-header"><span class="m-sc-ico">✨</span><div class="m-sc-title">Animation & Motion</div></div>
+        <div class="m-sc-pills"><span class="m-sp">CSS Animations</span><span class="m-sp">Keyframes</span><span class="m-sp">Transitions</span><span class="m-sp">Scroll Effects</span></div>
+      </div>
+      <div class="m-skill-card m-reveal">
+        <div class="m-sc-header"><span class="m-sc-ico">🚀</span><div class="m-sc-title">Deploy & Performance</div></div>
+        <div class="m-sc-pills"><span class="m-sp">Cloudflare Pages</span><span class="m-sp">Git</span><span class="m-sp">PWA</span><span class="m-sp">Web Vitals</span><span class="m-sp">SEO</span></div>
+      </div>
+      <div class="m-skill-card m-reveal">
+        <div class="m-sc-header"><span class="m-sc-ico">🎭</span><div class="m-sc-title">Creative Coding</div></div>
+        <div class="m-sc-pills"><span class="m-sp">Canvas API</span><span class="m-sp">WebGL</span><span class="m-sp">SVG</span><span class="m-sp">Generative Art</span></div>
+      </div>
+    </div>
+
+    <div class="m-skill-bars m-reveal">
+      <h3>Proficiency</h3>
+      <div class="m-sb-item">
+        <div class="m-sb-hd"><span class="m-sb-name">HTML & CSS</span><span class="m-sb-pct">95%</span></div>
+        <div class="m-sb-track"><div class="m-sb-fill" data-pct="95"></div></div>
+      </div>
+      <div class="m-sb-item">
+        <div class="m-sb-hd"><span class="m-sb-name">JavaScript</span><span class="m-sb-pct">82%</span></div>
+        <div class="m-sb-track"><div class="m-sb-fill" data-pct="82"></div></div>
+      </div>
+      <div class="m-sb-item">
+        <div class="m-sb-hd"><span class="m-sb-name">UI / UX Design</span><span class="m-sb-pct">88%</span></div>
+        <div class="m-sb-track"><div class="m-sb-fill" data-pct="88"></div></div>
+      </div>
+      <div class="m-sb-item">
+        <div class="m-sb-hd"><span class="m-sb-name">Responsive Design</span><span class="m-sb-pct">92%</span></div>
+        <div class="m-sb-track"><div class="m-sb-fill" data-pct="92"></div></div>
+      </div>
+      <div class="m-sb-item">
+        <div class="m-sb-hd"><span class="m-sb-name">Animation & Motion</span><span class="m-sb-pct">78%</span></div>
+        <div class="m-sb-track"><div class="m-sb-fill" data-pct="78"></div></div>
+      </div>
+    </div>
+
+  </div>
+</div><!-- /skills -->
+
+<!-- ══════════════════════════════
+     PROJECTS PAGE
+══════════════════════════════ -->
+<div class="m-page" id="m-page-projects">
+
+  <div class="m-section">
+    <span class="m-section-tag">Projects</span>
+    <h2 class="m-section-title m-reveal">Things I've built</h2>
+    <div class="m-divider"></div>
+    <p class="m-sub-text m-reveal">Five live projects — each a different design challenge, all crafted with care.</p>
+  </div>
+
+  <div class="m-projects-content">
+    <div class="m-projects-grid">
+
+      <!-- macOS -->
+      <div class="m-proj-card m-reveal">
+        <div class="m-proj-thumb" style="background:linear-gradient(135deg,#0d0d1a,#1a1a35,#2a2060)">
+          <div class="m-proj-glow"></div>
+          <div class="m-browser">
+            <div class="m-bbar">
+              <div class="m-bdot" style="background:#ff5f56"></div>
+              <div class="m-bdot" style="background:#ffbd2e"></div>
+              <div class="m-bdot" style="background:#27c93f"></div>
+              <div class="m-burl">mac-28n.pages.dev</div>
+            </div>
+            <div class="m-bbody">
+              <div class="m-bhero" style="background:rgba(130,100,255,.22)"></div>
+              <div class="m-brow"><div class="m-bblock" style="background:rgba(130,100,255,.16)"></div><div class="m-bblock"></div></div>
+            </div>
+          </div>
+          <div class="m-proj-badge">macOS Web</div>
+        </div>
+        <div class="m-proj-body">
+          <div class="m-proj-type">Interactive Experience</div>
+          <div class="m-proj-title">macOS Tahoe Web</div>
+          <p class="m-proj-desc">A fully interactive macOS Tahoe simulation — working lock screen, dock, menu bar, Control Centre and Mission Control.</p>
+          <div class="m-proj-tags"><span class="m-pt">Lock Screen</span><span class="m-pt">Dock</span><span class="m-pt">Menu Bar</span></div>
+          <a href="https://mac-28n.pages.dev" target="_blank" class="m-proj-link">Visit site ↗</a>
+        </div>
+      </div>
+
+      <!-- OhmLab -->
+      <div class="m-proj-card m-reveal">
+        <div class="m-proj-thumb" style="background:linear-gradient(135deg,#071825,#0d3350,#0a6090)">
+          <div class="m-proj-glow"></div>
+          <div class="m-browser">
+            <div class="m-bbar">
+              <div class="m-bdot" style="background:#ff5f56"></div><div class="m-bdot" style="background:#ffbd2e"></div><div class="m-bdot" style="background:#27c93f"></div>
+              <div class="m-burl">ohmlab.pages.dev</div>
+            </div>
+            <div class="m-bbody">
+              <div class="m-bhero" style="background:rgba(10,160,210,.2)"></div>
+              <div class="m-brow"><div class="m-bblock" style="background:rgba(10,160,210,.14)"></div><div class="m-bblock"></div></div>
+            </div>
+          </div>
+          <div class="m-proj-badge">Science Lab</div>
+        </div>
+        <div class="m-proj-body">
+          <div class="m-proj-type">Electronics / Science</div>
+          <div class="m-proj-title">OhmLab</div>
+          <p class="m-proj-desc">A professional website for an electronics lab — clean technical aesthetic, modern dark UI.</p>
+          <div class="m-proj-tags"><span class="m-pt">Dark Theme</span><span class="m-pt">Responsive</span><span class="m-pt">Technical</span></div>
+          <a href="https://ohmlab.pages.dev" target="_blank" class="m-proj-link">Visit site ↗</a>
+        </div>
+      </div>
+
+      <!-- RBot -->
+      <div class="m-proj-card m-reveal">
+        <div class="m-proj-thumb" style="background:linear-gradient(135deg,#0a1520,#1a3050,#2060a0)">
+          <div class="m-proj-glow"></div>
+          <div class="m-browser">
+            <div class="m-bbar">
+              <div class="m-bdot" style="background:#ff5f56"></div><div class="m-bdot" style="background:#ffbd2e"></div><div class="m-bdot" style="background:#27c93f"></div>
+              <div class="m-burl">rbotelectronics.pages.dev</div>
+            </div>
+            <div class="m-bbody">
+              <div class="m-bhero" style="background:rgba(32,96,160,.28)"></div>
+              <div class="m-brow"><div class="m-bblock" style="background:rgba(32,96,160,.2)"></div><div class="m-bblock"></div></div>
+            </div>
+          </div>
+          <div class="m-proj-badge">E-Commerce</div>
+        </div>
+        <div class="m-proj-body">
+          <div class="m-proj-type">Electronics Retail</div>
+          <div class="m-proj-title">RBot Electronics</div>
+          <p class="m-proj-desc">A polished retail site — product showcase, brand identity, mobile-first commercial design.</p>
+          <div class="m-proj-tags"><span class="m-pt">E-Commerce</span><span class="m-pt">Mobile-First</span><span class="m-pt">Brand</span></div>
+          <a href="https://rbotelectronics.pages.dev" target="_blank" class="m-proj-link">Visit site ↗</a>
+        </div>
+      </div>
+
+      <!-- Kill Your GPU -->
+      <div class="m-proj-card m-reveal">
+        <div class="m-proj-thumb" style="background:linear-gradient(135deg,#150520,#3a0860,#7020d0)">
+          <div class="m-proj-glow"></div>
+          <div class="m-browser">
+            <div class="m-bbar">
+              <div class="m-bdot" style="background:#ff5f56"></div><div class="m-bdot" style="background:#ffbd2e"></div><div class="m-bdot" style="background:#27c93f"></div>
+              <div class="m-burl">killyourgpu.pages.dev</div>
+            </div>
+            <div class="m-bbody">
+              <div class="m-bhero" style="background:rgba(112,32,208,.35)"></div>
+              <div class="m-brow"><div class="m-bblock" style="background:rgba(112,32,208,.22)"></div><div class="m-bblock"></div></div>
+            </div>
+          </div>
+          <div class="m-proj-badge">GPU Tool</div>
+        </div>
+        <div class="m-proj-body">
+          <div class="m-proj-type">Performance / WebGL</div>
+          <div class="m-proj-title">Kill Your GPU</div>
+          <p class="m-proj-desc">A bold GPU stress-testing tool — WebGL shaders, particle systems, browser-based benchmarks.</p>
+          <div class="m-proj-tags"><span class="m-pt">WebGL</span><span class="m-pt">Stress Test</span><span class="m-pt">GPU</span></div>
+          <a href="https://killyourgpu.pages.dev" target="_blank" class="m-proj-link">Visit site ↗</a>
+        </div>
+      </div>
+
+      <!-- Jarvis Pro -->
+      <div class="m-proj-card m-reveal">
+        <div class="m-proj-thumb" style="background:linear-gradient(135deg,#001515,#003030,#005858)">
+          <div class="m-proj-glow"></div>
+          <div class="m-browser">
+            <div class="m-bbar">
+              <div class="m-bdot" style="background:#ff5f56"></div><div class="m-bdot" style="background:#ffbd2e"></div><div class="m-bdot" style="background:#27c93f"></div>
+              <div class="m-burl">jarvispro.pages.dev</div>
+            </div>
+            <div class="m-bbody">
+              <div class="m-bhero" style="background:rgba(0,200,180,.25)"></div>
+              <div class="m-brow"><div class="m-bblock" style="background:rgba(0,200,180,.14)"></div><div class="m-bblock"></div></div>
+            </div>
+          </div>
+          <div class="m-proj-badge">AI Interface</div>
+        </div>
+        <div class="m-proj-body">
+          <div class="m-proj-type">AI / Assistant UI</div>
+          <div class="m-proj-title">Jarvis Pro</div>
+          <p class="m-proj-desc">Futuristic AI assistant UI — cinematic HUD-style, teal-on-dark, a chat interface from the future.</p>
+          <div class="m-proj-tags"><span class="m-pt">AI UI</span><span class="m-pt">HUD</span><span class="m-pt">Animations</span></div>
+          <a href="https://jarvispro.pages.dev" target="_blank" class="m-proj-link">Visit site ↗</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div><!-- /projects -->
+
+<!-- ══════════════════════════════
+     CONTACT PAGE
+══════════════════════════════ -->
+<div class="m-page" id="m-page-contact">
+
+  <div class="m-section">
+    <span class="m-section-tag">Get in Touch</span>
+    <h2 class="m-section-title m-reveal">Let's build something great</h2>
+    <div class="m-divider"></div>
+    <p class="m-sub-text m-reveal">Have a project idea? I typically respond within 24 hours.</p>
+  </div>
+
+  <div class="m-contact-content">
+
+    <div class="m-contact-info m-reveal">
+      <div class="m-c-item">
+        <div class="m-c-ico">✉️</div>
+        <div><div class="m-c-l">Email</div><div class="m-c-v">ajmalsworkshop@gmail.com</div></div>
+      </div>
+      <div class="m-c-item">
+        <div class="m-c-ico">📞</div>
+        <div><div class="m-c-l">Phone</div><div class="m-c-v">+91 9495050785</div></div>
+      </div>
+      <div class="m-c-item">
+        <div class="m-c-ico">📍</div>
+        <div><div class="m-c-l">Location</div><div class="m-c-v">Kerala, India</div></div>
+      </div>
+    </div>
+
+    <div class="m-social-row m-reveal">
+      <a href="https://github.com" target="_blank" class="m-soc">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.2.08 1.84 1.23 1.84 1.23 1.07 1.84 2.81 1.31 3.5 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02.01 2.04.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.93.43.37.81 1.1.81 2.22v3.29c0 .32.22.69.83.57C20.57 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+        GitHub
+      </a>
+      <a href="https://linkedin.com" target="_blank" class="m-soc">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zm1.78 13.02H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45C23.21 24 24 23.23 24 22.27V1.73C24 .77 23.21 0 22.22 0z"/></svg>
+        LinkedIn
+      </a>
+      <a href="https://instagram.com" target="_blank" class="m-soc">Instagram</a>
+    </div>
+
+    <div class="m-form m-reveal">
+      <div class="m-form-title">Send a message</div>
+      <div class="m-fg"><label>Your Name</label><input type="text" id="m-cf-name" placeholder="e.g. Sarah Ahmed" autocomplete="name"/></div>
+      <div class="m-fg"><label>Email</label><input type="email" id="m-cf-email" placeholder="you@example.com" autocomplete="email"/></div>
+      <div class="m-fg"><label>Subject</label><input type="text" id="m-cf-subject" placeholder="e.g. Need a portfolio website"/></div>
+      <div class="m-fg"><label>Message</label><textarea id="m-cf-msg" placeholder="Tell me about your project…"></textarea></div>
+      <button class="m-send-btn" onclick="mSendMsg()">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+        Send Message
+      </button>
+    </div>
+
+  </div>
+
+  <div class="m-resume-band">
+    <h3>Want my résumé?</h3>
+    <p>Drop me a quick email and I'll send it right over.</p>
+    <a href="mailto:ajmalsworkshop@gmail.com?subject=Resume Request" class="m-btn m-btn-gold" style="display:inline-flex;margin-top:4px">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+      Request Résumé
+    </a>
+  </div>
+
+</div><!-- /contact -->
+
+<!-- ══════════ BOTTOM NAV ══════════ -->
+<nav class="m-bottom-nav" id="m-bottom-nav">
+  <div class="m-bnav-item active" data-mpage="home" onclick="mGoPage('home')">
+    <span class="m-bnav-icon">🏠</span>
+    <span class="m-bnav-label">Home</span>
+    <div class="m-bnav-dot"></div>
+  </div>
+  <div class="m-bnav-item" data-mpage="about" onclick="mGoPage('about')">
+    <span class="m-bnav-icon">👤</span>
+    <span class="m-bnav-label">About</span>
+    <div class="m-bnav-dot"></div>
+  </div>
+  <div class="m-bnav-item" data-mpage="skills" onclick="mGoPage('skills')">
+    <span class="m-bnav-icon">⚡</span>
+    <span class="m-bnav-label">Skills</span>
+    <div class="m-bnav-dot"></div>
+  </div>
+  <div class="m-bnav-item" data-mpage="projects" onclick="mGoPage('projects')">
+    <span class="m-bnav-icon">🖥️</span>
+    <span class="m-bnav-label">Work</span>
+    <div class="m-bnav-dot"></div>
+  </div>
+  <div class="m-bnav-item" data-mpage="contact" onclick="mGoPage('contact')">
+    <span class="m-bnav-icon">✉️</span>
+    <span class="m-bnav-label">Contact</span>
+    <div class="m-bnav-dot"></div>
+  </div>
+</nav>
+
+<!-- Toast -->
+<div class="m-toast" id="m-toast"></div>
+
+<script src="js/mobile.js"></script>
+</body>
+</html>
