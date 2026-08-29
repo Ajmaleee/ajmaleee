@@ -1,9 +1,5 @@
 <div align="center">
 
-<img src="./matrix-rain.svg" alt="matrix rain" width="100%" />
-
-<br>
-
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=1200&pause=400&color=00FF00&center=true&vCenter=true&multiline=true&repeat=false&width=600&height=160&lines=%3E+INITIALIZING+SYSTEM...;%3E+BYPASSING+FIREWALL...;%3E+ACCESS+GRANTED;%3E+WELCOME%2C+AJMALEEE" alt="boot sequence" />
 
 </div>
@@ -34,7 +30,7 @@
 
 <br>
 
-## `~/tech-stack`
+## 📡 `~/tech-stack`
 
 <div align="center">
 
@@ -48,7 +44,22 @@
 
 <br>
 
-## `~/contact`
+## 📊 `~/live-stats`
+
+<div align="center">
+
+<img src="https://github-readme-stats.vercel.app/api?username=Ajmaleee&show_icons=true&hide_border=true&bg_color=0D1117&title_color=00FF00&icon_color=00FF00&text_color=00FF00&ring_color=00FF00" alt="GitHub Stats" width="48%" />
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ajmaleee&layout=compact&hide_border=true&bg_color=0D1117&title_color=00FF00&text_color=00FF00" alt="Top Langs" width="48%" />
+
+<br><br>
+
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=Ajmaleee&hide_border=true&background=0D1117&stroke=00FF00&ring=00FF00&fire=00FF00&currStreakLabel=00FF00&sideLabels=00FF00&currStreakNum=00FF00&sideNums=00FF00&dates=00FF00" alt="GitHub Streak" width="60%" />
+
+</div>
+
+<br>
+
+## 📞 `~/contact`
 
 <div align="center">
 
@@ -63,8 +74,7 @@
 
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=14&duration=2000&pause=800&color=00FF00&center=true&vCenter=true&width=500&lines=%3E+connection+terminated_" alt="closing line" />
 
-<img src="https://komarev.com/ghpvc/?username=Ajmaleee&label=TRACES DETECTED&color=00FF00&style=flat-square" alt="profile views" />
+<img src="https://komarev.com/ghpvc/?username=Ajmaleee&label=TRACES+DETECTED&color=00FF00&style=flat-square" alt="profile views" />
 
 </div>
-
 
