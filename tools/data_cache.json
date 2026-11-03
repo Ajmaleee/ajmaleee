@@ -747,7 +747,7 @@
   "total": 543
  },
  "forks": 0,
- "generated_at": "2026-11-03T15:10:40Z",
+ "generated_at": "2026-11-03T17:03:46Z",
  "languages": [
   [
    "HTML",
@@ -774,6 +774,10 @@
    2
   ],
   [
+   "Python",
+   1
+  ],
+  [
    "Astro",
    1
   ]
@@ -789,6 +793,15 @@
  "public_repos": 47,
  "repos": [
   {
+   "description": "Personal portfolio showcasing modern web development and IoT-based projects. Focused on building responsive business websites, landing pages, and dashboards that connect real-world electronics with\u2026",
+   "fork": false,
+   "forks": 0,
+   "language": "Python",
+   "name": "ajmaleee",
+   "stars": 1,
+   "updated": "2026-11-03T17:03:33Z"
+  },
+  {
    "description": "A tech blog to keep track of my hardware journey!",
    "fork": false,
    "forks": 0,
@@ -796,15 +809,6 @@
    "name": "TechBlog",
    "stars": 0,
    "updated": "2026-11-03T13:25:44Z"
-  },
-  {
-   "description": "Personal portfolio showcasing modern web development and IoT-based projects. Focused on building responsive business websites, landing pages, and dashboards that connect real-world electronics with\u2026",
-   "fork": false,
-   "forks": 0,
-   "language": null,
-   "name": "ajmaleee",
-   "stars": 1,
-   "updated": "2026-11-03T06:09:11Z"
   },
   {
    "description": "a three.js web app to control my robotic arm",
