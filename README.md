@@ -1,89 +1,51 @@
-<div align="center">
-
-<picture>
-  <source media="(prefers-reduced-motion: reduce)" srcset="assets/matrix-portrait-poster.png">
-  <img src="assets/matrix-portrait.gif" width="340" alt="Animated Matrix-style portrait of Ajmal Ali formed from green terminal glyphs">
-</picture>
-
-<h1>AJMAL ALI A</h1>
-
-<p><code>@Ajmaleee</code> / web developer / hardware tinkerer</p>
-
-<p>
-  <a href="#selected-work">work</a> &middot;
-  <a href="#system">system</a> &middot;
-  <a href="https://github.com/Ajmaleee">github</a> &middot;
-  <a href="https://www.instagram.com/ajmaleee__/">instagram</a> &middot;
-  <a href="mailto:ajmalsworkshop@gmail.com">email</a>
-</p>
-
+<div data-importer="border">
+  <img style="100%" src="https://capsule-render.vercel.app/api?type=waving&height=100&section=footer&reversal=true&text=@Ajmaleee&fontSize=63&fontColor=d1a77c&fontAlign=50&fontAlignY=50&stroke=-&animation=fadeIn&descSize=20&descAlign=50&descAlignY=50&color=gradient"  />
 </div>
 
-```text
-$ whoami
-AJMAL ALI A
-web developer + hardware tinkerer
+###
 
-I build for the browser and for the board: responsive sites,
-live monitoring dashboards, and the ESP32 devices that feed them.
+<h2 data-importer="text" align="left">YOOOOO!<br>Im Ajmal ,a student who builds random stuff which has no point to exist!</h2>
 
-currently   Terra-Sential, a landslide early-warning system
-building    ESP32 firmware and the dashboards that read it
-```
+###
 
-## Selected work
+<div data-importer="stats" align="center">
+  <img src="https://raw.githubusercontent.com/ajmaleee/ajmaleee/stats-output/stats.svg?hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dracula&locale=en&hide_border=false" height="150" alt="stats graph"  />
+  <img src="https://raw.githubusercontent.com/ajmaleee/ajmaleee/languages-output/languages.svg?locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=dracula&hide_border=false" height="150" alt="languages graph"  />
+</div>
 
-### 01 / Terra-Sential
-An ESP32 landslide-risk monitor with a live browser dashboard. The node, the data link, and the interface were built as one system.
+###
 
-`C++` `ESP32` `TypeScript`
+<div data-importer="techs" align="left">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="30" alt="javascript logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" height="30" alt="typescript logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="30" alt="react logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" height="30" alt="html5 logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" height="30" alt="css3 logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" height="30" alt="python logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" height="30" alt="csharp logo"  />
+</div>
 
-[firmware](https://github.com/Ajmaleee/Terra-Sential) / [dashboard](https://github.com/Ajmaleee/Landslide-Detection-System---v2) / [device source](https://github.com/Ajmaleee/Landslide-Detection-System---device-source-code)
+###
 
-### 02 / CircuitShelf
-A mobile-first inventory tracker for Arduino parts, boards, sensors, and tools. It records what works and where it lives, with a companion ESP32 location node.
+<div data-importer="socials" align="left">
+  <a href="https://www.instagram.com/ajmaleee__/" target="_blank">
+    <img src="https://img.shields.io/static/v1?message=Instagram&logo=instagram&label=&color=E4405F&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="instagram logo"  />
+  </a>
+  <a href="ajmalsworkshop@gmail.com" target="_blank">
+    <img src="https://img.shields.io/static/v1?message=Gmail&logo=gmail&label=&color=D14836&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="gmail logo"  />
+  </a>
+</div>
 
-`JavaScript` `ESP32` `C++`
+###
 
-[app](https://github.com/Ajmaleee/CircuitShelf) / [hardware](https://github.com/Ajmaleee/CircuitShelf-Hardware)
+<br clear="both">
 
-### 03 / BEEP
-A keychain pet with an OLED face. You talk to it, and it responds.
+<img data-importer="snake" src="https://raw.githubusercontent.com/ajmaleee/ajmaleee/snake-output/snake.svg" alt="Snake animation" />
 
-`C++` `Python` `ESP32-C3`
-
-[source](https://github.com/Ajmaleee/BEEP)
-
-### 04 / TechBlog
-Notes from the hardware side: builds, fixes, and the code that connects them.
-
-`Astro` `CSS`
-
-[read](https://github.com/Ajmaleee/TechBlog)
-
-More repositories at [github.com/Ajmaleee](https://github.com/Ajmaleee?tab=repositories).
-
-## System
-
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="assets/generated/system-dark.svg">
-    <img src="assets/generated/system-light.svg" width="560" alt="System monitor: 47 public repositories, 15 stars, 2 followers, 3 following, 543 contributions, 98 active days, a longest streak of 7 days and a current streak of 3 days. Language mix by primary language: HTML 15, JavaScript 15, C++ 6, CSS 3, TypeScript 2, other 3. A 53-week contribution heatmap.">
-  </picture>
-</p>
-
-<p align="center"><sub>Generated from public profile data. Updates daily.</sub></p>
-
-## Stack
-
-```text
-LANGUAGES   JavaScript / TypeScript / HTML / CSS / Python / C++
-EMBEDDED    ESP32 / Arduino / SSD1306 OLED / sensors
-WEB         Astro / responsive interfaces / live dashboards
-```
-
-## Elsewhere
-
-[GitHub](https://github.com/Ajmaleee) / [Instagram](https://www.instagram.com/ajmaleee__/) / [Email](mailto:ajmalsworkshop@gmail.com)
-
-<sub>Portrait and system panel are generated from source in <a href="tools/">tools/</a>.</sub>
+###
